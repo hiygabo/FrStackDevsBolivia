@@ -1,0 +1,335 @@
+html, body, #root{
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+}
+.container{
+    padding: 10%;
+    margin-left: 120px;
+    max-width: 100%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+p{
+    color: #2b2a2a;
+    align-items: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 22px;
+}
+
+.logo-sin-texto{
+    text-align: center;
+    margin: 0 auto 20px;
+    padding-top: 20px;
+}
+
+.logosintexto{
+    width: 120px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* El mensaje de bienvenida en la home (Typewriter) */
+.container > p{
+    text-align: center;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+h1{
+    padding: 5%;
+    text-align: center;
+    color: black;
+    font-size: 6rem;
+}
+
+.card{
+    margin: 20px;
+    border: 1px solid #cfcfcf;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    transition: box-shadow 0.3s ease;
+}
+
+.card:hover{
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+h3{
+    padding: 2%;
+    color: black;
+    font-size: 1.5rem;
+}
+h2{
+    padding: 15px;
+    color: black;
+    font-size: 1.8rem;
+}
+form{
+    display: grid;
+    grid-template-columns: 3fr 3fr 3fr 3fr 3fr;
+    grid-template-rows: 3fr;
+    gap: 20px;
+    align-items: center;
+}
+
+input{
+    padding: 10px 12px;
+    border: 1px solid #cfcfcf;
+    background-color: white;
+    color: #2b2a2a;
+    font-size: 16px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus{
+    outline: none;
+    border-color: #2b2a2a;
+    box-shadow: 0 0 0 3px rgba(43, 42, 42, 0.1);
+}
+button[type="submit"]{
+    background-color: #2b2a2a;
+    align-items: center;
+    padding: 15px;
+    color: #cfcfcf;
+    border: 1px solid #2b2a2a;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+button[type="submit"]:hover{
+    background-color: aliceblue;
+    color: black;
+    border-color: #2b2a2a;
+    transform: translateY(-1px);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+button[type="button"]{
+    background-color: #2b2a2a;
+    align-items: center;
+    padding: 15px;
+    color: #ffffff;
+    border: 1px solid #2b2a2a;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+button[type="button"]:hover{
+    background-color: aliceblue;
+    color: black;
+    border-color: #2b2a2a;
+    transform: translateY(-1px);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+.lista{
+    padding: 15px;
+
+}
+
+
+
+.editar{
+    margin :5px;
+}
+.eliminar{
+    margin:5px;
+}
+button{
+    margin:5px;
+
+}
+.nombres-cursos{
+    color: #2b2a2a;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 500;
+}
+.cursos{
+    padding: 5px;
+    border: 5px;
+    border-color: black;
+    
+}
+
+.cursos ul{
+    list-style: none;
+    padding: 3px;
+    margin: 3px;
+    
+}
+.cursos li{
+    border: 1px solid #cfcfcf;
+    padding: 12px;
+    display: grid;
+    grid-template-columns: 200px 1fr auto auto auto;
+    margin-bottom: 12px;
+    align-items: center;
+    gap: 16px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    border-radius: 4px;
+}
+
+.cursos li:hover{
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.12);
+    transform: translateY(-2px);
+}
+
+.curso-imagen{
+    width: 100%;
+    height: 140px;
+    overflow: hidden;
+    border-radius: 6px;
+    background-color: #f5f5f5;
+}
+
+.curso-imagen img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.curso-imagen img:hover{
+    transform: scale(1.05);
+}
+
+button.ins{
+    background-color: rgb(74, 156, 195);
+    color: white;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: 500;
+    border: 2px solid rgb(74, 156, 195);
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: auto;
+    display: inline-block;
+}
+button.ins:hover{
+    background-color: rgb(136, 203, 234);
+    border: 2px solid rgb(74, 156, 195);
+    color: #2b2a2a;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(74, 156, 195, 0.3);
+}
+.volver{
+    color: #2b2a2a;
+}
+
+/* Tablets y pantallas medianas */
+@media (max-width: 1024px){
+    .container{
+        margin-left: 60px;
+        padding: 32px 24px;
+    }
+
+    h1{
+        font-size: 2rem;
+        padding: 3%;
+    }
+
+    h2{
+        font-size: 1.5rem;
+    }
+
+    h3{
+        font-size: 1.3rem;
+    }
+}
+
+/* Tablets pequeñas */
+@media (max-width: 900px){
+    .container{
+        margin-left: 0;
+        padding: 24px;
+    }
+
+    .container > p{
+        margin-left: 0;
+        text-align: center;
+        font-size: 20px;
+    }
+
+    form{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+
+    .card{
+        margin: 12px 0;
+        padding: 16px;
+    }
+
+    h1{
+        font-size: 1.8rem;
+        padding: 2%;
+    }
+}
+
+/* Móviles */
+@media (max-width: 640px){
+    .container{
+        padding: 16px;
+    }
+
+    h1{
+        font-size: 1.5rem;
+        padding: 8px;
+    }
+
+    h2{
+        font-size: 1.3rem;
+        padding: 8px;
+    }
+
+    h3{
+        font-size: 1.1rem;
+    }
+
+    p{
+        font-size: 18px;
+    }
+
+    .nombres-cursos{
+        font-size: 16px;
+    }
+
+    .card{
+        margin: 8px 0;
+        padding: 12px;
+    }
+
+    input{
+        font-size: 14px;
+        padding: 8px 10px;
+    }
+
+    button{
+        font-size: 14px;
+        padding: 10px 12px;
+    }
+
+    button.ins{
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+
+    .cursos li{
+        padding: 10px;
+        gap: 8px;
+        grid-template-columns: 1fr;
+    }
+
+    .curso-imagen{
+        height: 180px;
+        margin-bottom: 8px;
+    }
+
+    .lista{
+        padding: 8px;
+    }
+}

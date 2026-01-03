@@ -1,0 +1,164 @@
+.navbar{
+    position: sticky;
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #686565;
+
+    width: 100%;
+    padding: 30px;
+    top: 0;
+    z-index: 1000;
+    background-color: #ffffff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    transition: box-shadow 0.3s ease;
+}
+
+.navbar nav{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    padding-left: 100px;
+}
+.logo{
+    position: absolute;
+    left: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.links{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+.inicio{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 4px;
+    transition: color 200ms ease;
+}
+.inicio:hover{
+    color: #686565;
+}
+
+.inicio::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 100%;
+    background: #686565;
+
+
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 250ms ease;
+}
+
+.inicio:hover::after{
+    transform: scaleX(1);
+}
+.logo-imagen {
+    height: 60px;
+    width: auto;
+}
+.bienvenida{
+    color: black;
+}
+
+.user-section{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.btn-cerrar-sesion{
+    background-color: #2b2a2a;
+    color: white;
+    border: 1px solid #2b2a2a;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.btn-cerrar-sesion:hover{
+    background-color: #686565;
+    border-color: #686565;
+    transform: translateY(-1px);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+/* Tablets */
+@media (max-width: 900px){
+    .navbar{
+        padding: 20px 15px;
+    }
+
+    .logo{
+        left: 15px;
+    }
+
+    .logo-imagen{
+        height: 50px;
+    }
+
+    .navbar nav{
+        max-width: 400px;
+    }
+}
+
+/* Móviles */
+@media (max-width: 640px){
+    .navbar{
+        padding: 15px 10px;
+    }
+
+    .logo{
+        left: 10px;
+    }
+
+    .logo-imagen{
+        height: 40px;
+    }
+
+    .navbar nav{
+        max-width: 300px;
+    }
+
+    .links{
+        flex-direction: column;
+        gap: 8px;
+        font-size: 14px;
+    }
+
+    .inicio{
+        font-size: 14px;
+    }
+
+    .bienvenida{
+        font-size: 13px;
+    }
+
+    .links button{
+        font-size: 13px;
+        padding: 8px 12px;
+    }
+
+    .user-section{
+        flex-direction: column;
+        gap: 6px;
+        align-items: flex-end;
+    }
+
+    .btn-cerrar-sesion{
+        padding: 6px 12px;
+        font-size: 12px;
+    }
+}

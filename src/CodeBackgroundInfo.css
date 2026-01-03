@@ -1,0 +1,74 @@
+.code-background-info {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.code-particle {
+  position: absolute;
+  font-family: 'Courier New', 'Monaco', 'Consolas', monospace;
+  color: #2b2a2a;
+  font-weight: 600;
+  white-space: nowrap;
+  animation: floatAndFade 20s ease-in-out infinite;
+  user-select: none;
+}
+
+@keyframes floatAndFade {
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+    opacity: 0;
+  }
+  5% {
+    opacity: var(--particle-opacity, 0.08);
+  }
+  25% {
+    transform: translate(-10px, -20px) rotate(5deg);
+  }
+  50% {
+    transform: translate(15px, -10px) rotate(-3deg);
+  }
+  75% {
+    transform: translate(-8px, 15px) rotate(4deg);
+  }
+  95% {
+    opacity: var(--particle-opacity, 0.08);
+  }
+  100% {
+    transform: translate(0, 0) rotate(0deg);
+    opacity: 0;
+  }
+}
+
+/* Variaciones para hacer el movimiento más aleatorio */
+.code-particle:nth-child(2n) {
+  animation-direction: reverse;
+}
+
+.code-particle:nth-child(3n) {
+  animation-timing-function: ease-in;
+}
+
+.code-particle:nth-child(5n) {
+  animation-duration: 25s;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .code-particle {
+    font-size: 10px !important;
+    opacity: 0.05 !important;
+  }
+}
+
+@media (max-width: 640px) {
+  .code-particle {
+    font-size: 8px !important;
+    opacity: 0.04 !important;
+  }
+}
