@@ -5,7 +5,6 @@ import 'sweetalert2/dist/sweetalert2.min.css'
 import './DetalleCurso.css'
 import Typewriter from 'typewriter-effect';
 import { FaArrowLeft } from "react-icons/fa";
-import Snowfall from 'react-snowfall';
 import emailjs from '@emailjs/browser'
 
 function DetalleCurso(){
@@ -92,18 +91,6 @@ function DetalleCurso(){
 
     return(
         <>
-            <div style={{
-                position: 'fixed',
-                top: 0,
-                left: 0,
-                width: '100%',
-                height: '100%',
-                zIndex: -1,
-                pointerEvents: 'none'
-            }}>
-                <Snowfall color="#3139A3" />
-            </div>
-
             <div className="container" style={{color: "white"}}> 
                 <Link to="/" className="volver">
                 <FaArrowLeft aria-hidden="true"/>

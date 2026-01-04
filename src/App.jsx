@@ -12,7 +12,17 @@ function App(){
   return(
 
     <BrowserRouter>
-    <Snowfall color="blue"/>
+    <div style={{
+      position: 'fixed',
+      top: 0,
+      left: 0,
+      width: '100%',
+      height: '100%',
+      zIndex: 0,
+      pointerEvents: 'none'
+    }}>
+      <Snowfall color="#3139A3" />
+    </div>
     <NavBar />
     <Routes>
       <Route path="/" element={<ListaCursos/>}/>

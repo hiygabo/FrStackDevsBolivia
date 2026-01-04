@@ -1,6 +1,5 @@
 import { useEffect,  useState } from "react";
 import './App.css'
-import Snowfall from 'react-snowfall';
 import Swal from "sweetalert2";
 import Typewriter from 'typewriter-effect';
 import 'sweetalert2/dist/sweetalert2.min.css'
@@ -129,18 +128,6 @@ function ListaCursos(){
 
   return (
     <>
-      <div style={{
-        position: 'fixed',
-        top: 0,
-        left: 0,
-        width: '100%',
-        height: '100%',
-        zIndex: -1,
-        pointerEvents: 'none'
-      }}>
-        <Snowfall color="#3139A3" />
-      </div>
-   
       <div className="container" style={{padding : "20px"}}>
         {/* <div className="logo-sin-texto">
           <img src={logoSinTexto} alt="StackDevs Logo" className="logosintexto" />
@@ -270,7 +257,7 @@ function ListaCursos(){
                 Duracion: {curso.duracion}<br/>
                 {curso.descripcion}<br/>
                 Inicio: {curso.fechaInicio}<br/>
-                Precio: {curso.precio}<br/>
+                Precio: {curso.precio}Bs.<br/>
               </span>
 
               {esAdmin && (
