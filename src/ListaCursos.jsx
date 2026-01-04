@@ -36,7 +36,15 @@ function ListaCursos(){
   const manejarEnvio = (evento) =>{
     evento.preventDefault();
 
-    const datosCurso = {nombre, duracion, descripcion, fechaInicio, precio,urlImagen};
+    const datosCurso = {
+      nombre, 
+      duracion, 
+      descripcion, 
+      precio,
+      urlImagen,
+      fecha_inicio: fechaInicio,
+      fechaInicio:fechaInicio
+    };
 
     if(idEditar !== null){
       fetch(`https://backend-springboot-stackdevsbolivia.onrender.com/api/cursos/${idEditar}`,{
