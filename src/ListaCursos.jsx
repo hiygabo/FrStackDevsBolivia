@@ -12,7 +12,7 @@ function ListaCursos(){
   const[nombre, setNombre] = useState("");
   const[duracion, setDuracion] = useState("");
   const[descripcion, setDescripcion] = useState("");
-  const[fechaInicio, setFechaIncio] = useState("");
+  const[fechaInicio, setFechaInicio] = useState("");
   const[precio, setPrecio]= useState("")
   const[urlImagen, setUrlImagen] = useState("")
   const[idEditar, setIdEditar] = useState(null);
@@ -106,7 +106,7 @@ function ListaCursos(){
     setNombre(curso.nombre);
     setDuracion(curso.duracion);
     setDescripcion(curso.descripcion);
-    setFechaIncio(curso.fechaInicio);
+    setFechaInicio(curso.fechaInicio);
     setPrecio(curso.precio);
     setIdEditar(curso.id);
     setUrlImagen(curso.urlImagen)
@@ -118,7 +118,7 @@ function ListaCursos(){
     setNombre("");
     setDuracion("");
     setDescripcion("");
-    setFechaIncio("");
+    setFechaInicio("");
     setPrecio("");
     setUrlImagen("")
     setIdEditar(null);
@@ -196,7 +196,7 @@ function ListaCursos(){
         />
 
         <input type="text" placeholder="fechaInicio" value={fechaInicio}
-        onChange={(e) => setFechaIncio(e.target.value)} required
+        onChange={(e) => setFechaInicio(e.target.value)} required
         />
         <input type="number" placeholder="precio" value={precio} 
         onChange={(e)=> setPrecio(e.target.value)} required
