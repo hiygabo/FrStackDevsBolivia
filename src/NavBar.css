@@ -162,3 +162,58 @@
         font-size: 12px;
     }
 }
+
+/* Celulares muy pequeños (320px - 375px) */
+@media (max-width: 375px){
+    .navbar{
+        padding: 10px 8px;
+    }
+
+    .logo{
+        left: 8px;
+    }
+
+    .logo-imagen{
+        height: 35px;
+    }
+
+    .navbar nav{
+        padding-left: 50px;
+    }
+
+    .links{
+        gap: 5px;
+    }
+
+    .inicio{
+        font-size: 12px;
+    }
+
+    .bienvenida{
+        font-size: 11px;
+    }
+
+    .btn-cerrar-sesion{
+        padding: 5px 10px;
+        font-size: 11px;
+    }
+}
+
+/* Celulares extra pequeños (menos de 320px) */
+@media (max-width: 320px){
+    .navbar{
+        padding: 8px 5px;
+    }
+
+    .logo-imagen{
+        height: 30px;
+    }
+
+    .navbar nav{
+        padding-left: 40px;
+    }
+
+    .inicio{
+        font-size: 11px;
+    }
+}

@@ -55,3 +55,48 @@
         padding: 10px;
     }
 }
+
+/* Celulares muy pequeños (320px - 375px) */
+@media (max-width: 375px){
+    .login{
+        padding: 12px 10px;
+    }
+
+    .formlogin{
+        padding: 14px;
+        gap: 10px;
+    }
+
+    .formlogin input{
+        font-size: 13px;
+        padding: 8px;
+    }
+
+    .formlogin button[type="submit"]{
+        font-size: 13px;
+        padding: 8px;
+    }
+
+    .login h2{
+        font-size: 1.3rem;
+    }
+}
+
+/* Celulares extra pequeños (menos de 320px) */
+@media (max-width: 320px){
+    .login{
+        padding: 10px 8px;
+    }
+
+    .formlogin{
+        padding: 12px;
+    }
+
+    .formlogin input{
+        font-size: 12px;
+    }
+
+    .login h2{
+        font-size: 1.1rem;
+    }
+}

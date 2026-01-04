@@ -146,6 +146,73 @@
         text-align: center;
     }
 }
+
+/* Celulares muy pequeños (320px - 375px) */
+@media (max-width: 375px){
+    .detalle{
+        padding: 8px;
+    }
+
+    .detalle p{
+        font-size: 14px;
+    }
+
+    .volver{
+        padding: 8px 10px;
+        font-size: 12px;
+    }
+
+    .formu input{
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .formu button{
+        padding: 12px;
+        font-size: 14px;
+    }
+
+    .formu h4{
+        font-size: 13px;
+    }
+
+    .btn-whatsapp{
+        padding: 10px 15px;
+        font-size: 13px;
+    }
+
+    .formulario-container{
+        padding: 12px;
+    }
+
+    .formulario-container h2{
+        font-size: 1.1rem;
+    }
+
+    .formulario-container h3{
+        font-size: 0.9rem;
+    }
+}
+
+/* Celulares extra pequeños (menos de 320px) */
+@media (max-width: 320px){
+    .detalle{
+        padding: 6px;
+    }
+
+    .detalle p{
+        font-size: 13px;
+    }
+
+    .formulario-container h2{
+        font-size: 1rem;
+    }
+
+    .formu input{
+        padding: 8px;
+        font-size: 13px;
+    }
+}
 h4{
     color: #000000;
     margin: 0;

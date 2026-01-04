@@ -366,3 +366,90 @@ button.ins:hover{
         padding: 8px;
     }
 }
+
+/* Celulares muy pequeños (320px - 375px) */
+@media (max-width: 375px){
+    .container{
+        padding: 10px;
+        max-width: 100%;
+    }
+
+    h1{
+        font-size: 1.2rem;
+        padding: 5px;
+    }
+
+    h2{
+        font-size: 1.1rem;
+        padding: 5px;
+    }
+
+    h3{
+        font-size: 1rem;
+    }
+
+    p{
+        font-size: 15px;
+    }
+
+    .nombres-cursos{
+        font-size: 15px;
+        padding: 5px;
+    }
+
+    .cursos li{
+        padding: 8px;
+        gap: 10px;
+    }
+
+    .curso-imagen{
+        height: 150px;
+    }
+
+    input{
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    button{
+        font-size: 13px;
+        padding: 8px 10px;
+    }
+
+    button.ins{
+        font-size: 13px;
+        padding: 8px 16px;
+    }
+
+    .card{
+        margin: 5px 0;
+        padding: 10px;
+    }
+}
+
+/* Celulares extra pequeños (menos de 320px) */
+@media (max-width: 320px){
+    .container{
+        padding: 8px;
+    }
+
+    h1{
+        font-size: 1rem;
+    }
+
+    h2{
+        font-size: 0.95rem;
+    }
+
+    p{
+        font-size: 14px;
+    }
+
+    .curso-imagen{
+        height: 130px;
+    }
+
+    .nombres-cursos{
+        font-size: 14px;
+    }
+}
