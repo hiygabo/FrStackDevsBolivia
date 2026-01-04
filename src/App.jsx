@@ -4,6 +4,7 @@ import DetalleCurso from "./DetalleCurso";
 import Login from "./Login"
 import NavBar from "./NavBar";
 import Información from "./Informacion";
+import Footer from "./Footer";
 import './App.css'
 import Snowfall from "react-snowfall";
 
@@ -19,7 +20,7 @@ function App(){
       <Route path="/login" element={<Login/>}/>
       <Route path="/informacion" element={<Información/>}/>
     </Routes>
-    
+    <Footer />
     </BrowserRouter>
   )
 }
