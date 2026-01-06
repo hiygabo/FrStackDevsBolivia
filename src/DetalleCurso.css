@@ -19,6 +19,12 @@
     display: block;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
+
+.temario-texto{
+    white-space: pre-line;
+    line-height: 1.4;
+    margin: 10px 0;
+}
 .volver{
     border: 1px solid #cfcfcf;
     border-radius: 12px;

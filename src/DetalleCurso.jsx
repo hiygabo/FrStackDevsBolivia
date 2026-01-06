@@ -103,7 +103,7 @@ function DetalleCurso(){
                 <div className="detalle">
                     <img src={curso.urlImagen} alt={curso.nombre} />
                     <p><strong>Descripcion:</strong> {curso.detalle.descripcion}</p>
-                    <p style={{ whiteSpace: "pre-line" }}><strong>Temario:</strong> {curso.detalle.temario}</p>
+                    <p className="temario-texto"><strong>Temario:</strong> {curso.detalle.temario}</p>
                     
                     <p><strong>Requisitos:</strong> {curso.detalle.requisitos}</p>
 
